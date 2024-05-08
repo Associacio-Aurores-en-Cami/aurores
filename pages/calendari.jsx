@@ -1,13 +1,11 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import React from 'react';
-import MiCalendario from '@/components/calendario';
+import FormActivitats from '@/components/formActivitats';
+import Calendar from '@/components/calendarioReservas';
 
 const Calendari = () => {
     return (
         <div>
-            <h1>Calendari</h1>
-            <MiCalendario />
+            <Calendar/>
         </div>
     );
 }
