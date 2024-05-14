@@ -18,7 +18,7 @@ class MyDocument extends Document {
  
  
                 </Head>
-                <body>
+                <body className='bg-maize-100'>
                     <Main />
                     <NextScript />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

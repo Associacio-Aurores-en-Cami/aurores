@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     return (
         <>
             {!isRegisterOrLoginPage && <Navbar />}
-            <main className='bg-maize-100'>{children}</main>
+            <main className='pb-20'>{children}</main>
             {!isRegisterOrLoginPage && <Footer />}
         </>
     );

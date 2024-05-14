@@ -1,45 +1,72 @@
+"use client";
+
+import { Table } from "flowbite-react";
+
 const TaulaPreus = () => {
-    return (
-        <div class="bg-maize-100 p-20">
-            <table class="w-full border-collapse border border-gray-300">
-                <thead>
-                    <tr class="bg-gray-100">
-                        <th class="p-3 border border-gray-300 text-center">TEMPS</th>
-                        <th class="p-3 border border-gray-300 text-center">PREU BASE</th>
-                        <th class="p-3 border border-gray-300 text-center">21% IVA</th>
-                        <th class="p-3 border border-gray-300 text-center">PREU FINAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bg-white">
-                        <td class="p-3 border border-gray-300 text-center">1h</td>
-                        <td class="p-3 border border-gray-300 text-center">45,00 €</td>
-                        <td class="p-3 border border-gray-300 text-center">9,45 €</td>
-                        <td class="p-3 border border-gray-300 text-center">54,50 €</td>
-                    </tr>
-                    <tr class="bg-gray-100">
-                        <td class="p-3 border border-gray-300 text-center">2h</td>
-                        <td class="p-3 border border-gray-300 text-center">82,65 €</td>
-                        <td class="p-3 border border-gray-300 text-center">17,36 €</td>
-                        <td class="p-3 border border-gray-300 text-center">100,00 €</td>
-                    </tr>
-                    <tr class="bg-white">
-                        <td class="p-3 border border-gray-300 text-center">3h</td>
-                        <td class="p-3 border border-gray-300 text-center">120,00 €</td>
-                        <td class="p-3 border border-gray-300 text-center">25,20 €</td>
-                        <td class="p-3 border border-gray-300 text-center">145,20 €</td>
-                    </tr>
-                    <tr class="bg-gray-100">
-                        <td class="p-3 border border-gray-300 text-center">4h</td>
-                        <td class="p-3 border border-gray-300 text-center">150,00 €</td>
-                        <td class="p-3 border border-gray-300 text-center">31,50 €</td>
-                        <td class="p-3 border border-gray-300 text-center">181,50 €</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    );
+  return (
+    <div className="overflow-x-auto">
+      <Table hoverable>
+        <Table.Head>
+          <Table.HeadCell>TEMPS</Table.HeadCell>
+          <Table.HeadCell>PREU BASE</Table.HeadCell>
+          <Table.HeadCell>21% IVA</Table.HeadCell>
+          <Table.HeadCell>PREU FINAL</Table.HeadCell>
+          <Table.HeadCell>
+            <span className="sr-only">Edit</span>
+          </Table.HeadCell>
+        </Table.Head>
+        <Table.Body className="divide-y">
+          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              1h
+            </Table.Cell>
+            <Table.Cell>45,00€</Table.Cell>
+            <Table.Cell>9,45€</Table.Cell>
+            <Table.Cell>54,50€</Table.Cell>
+            <Table.Cell>
+              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                Edit
+              </a>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              2h
+            </Table.Cell>
+            <Table.Cell>82,65€</Table.Cell>
+            <Table.Cell>17,36€</Table.Cell>
+            <Table.Cell>100,00€</Table.Cell>
+            <Table.Cell>
+              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                Edit
+              </a>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">3h</Table.Cell>
+            <Table.Cell>120,00€</Table.Cell>
+            <Table.Cell>25,20€</Table.Cell>
+            <Table.Cell>145,20€</Table.Cell>
+            <Table.Cell>
+              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                Edit
+              </a>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
+            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">4h</Table.Cell>
+            <Table.Cell>150,00€</Table.Cell>
+            <Table.Cell>31,50€</Table.Cell>
+            <Table.Cell>181,50€</Table.Cell>
+            <Table.Cell>
+              <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                Edit
+              </a>
+            </Table.Cell>
+          </Table.Row>
+        </Table.Body>
+      </Table>
+    </div>
+  );
 }
-
 export default TaulaPreus;

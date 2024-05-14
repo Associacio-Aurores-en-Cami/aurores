@@ -2,7 +2,7 @@ import TaulaPreus from "@/components/taulaPreus";
 
 const Preus = () => {
     return (
-        <div>
+        <div className="p-20 mb-9">
             <TaulaPreus/>
         </div>
     );

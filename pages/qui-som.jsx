@@ -11,7 +11,7 @@ const Quisom = () => {
                 <meta name="description" content="Descubre los servicios de bienestar que ofrecemos en Aurores." />
             </Head>
 
-            <div className='bg-maize-100 flex flex-col  gap-14' >
+            <div className='bg-maize-100 flex flex-col  gap-14 mt-20 mb-28' >
                 <div className='flex flex-row mt-16 mb-10 gap-10 justify-center items-center'>
                     <div className='flex flex-col  w-[60vh] gap-4'>
                         <h1 className='text-[25px]  font-semibold '>QUI SOM?</h1>
@@ -30,9 +30,9 @@ const Quisom = () => {
                     </div>
 
                 </div>
-                <div className='flex flex-row    gap-10 justify-center items-center'>
-
-                    <div>
+                
+                <div className='flex flex-row   mb-[20vh] gap-10 justify-center items-center'>
+                <div>
                         <Image
                             src="/sala.jpg"
                             width={400}
@@ -41,13 +41,6 @@ const Quisom = () => {
                             className=''
                         />
                     </div>
-                    <div className='flex   w-[60vh] gap-4'>
-
-                        <h1 className='text-[15px]  font-medium '>
-                            Des de sessions de ioga que t'ajuden a trobar pau interior i flexibilitat física, fins a classes de biodansa que et conviden a expressar-te lliurement a través del moviment, en Aurores t'oferim un espai on pots explorar, créixer i florir.</h1>
-                    </div>
-                </div>
-                <div className='flex flex-row   mb-[20vh] gap-10 justify-center items-center'>
                     <div className='flex flex-col  w-[60vh] gap-4'>
 
                         <h1 className='text-[15px]  font-medium '>En Aurores, no sols ens preocupem pel teu benestar individual, sinó que també ens esforcem per crear una comunitat acollidora i solidària on puguis trobar suport, inspiració i connexions significatives.
@@ -67,6 +60,9 @@ const Quisom = () => {
 
                 </div>
             </div>
+            <div className="flex flex-row justify-center items-center "> 
+                        <Calendar /> 
+                    </div>
         </div>
     );
 }
