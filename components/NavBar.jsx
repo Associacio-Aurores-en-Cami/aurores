@@ -24,7 +24,7 @@ const Navbar = () => {
                     <div className="relative">
                         <Link href="#" onClick={toggleDropdown}>El nostre espai</Link>
                         {isDropdownOpen && (
-                            <div className="absolute left-0 mt-2 w-36 bg-white  shadow-lg rounded-md">
+                            <div className="absolute left-0 mt-2 w-36 bg-white  shadow-lg rounded-md z-50" >
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <Link href="/qui-som" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:font-bold" role="menuitem">Qui som</Link>
                                     <Link href="/on-estem" className="block px-4 py-2 text-sm  text-gray-700  hover:bg-gray-100 hover:font-bold " role="menuitem">On estem</Link>

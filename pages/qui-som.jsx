@@ -1,11 +1,10 @@
-// pages/contact.js
 import Image from 'next/image';
 import Head from 'next/head';
-
-
+import Calendar from '@/components/cale.jsx';
 const Quisom = () => {
     return (
         <div>
+            
             <Head>
                 <title>Servicios - Aurores</title>
                 <meta name="description" content="Descubre los servicios de bienestar que ofrecemos en Aurores." />
@@ -48,22 +47,16 @@ const Quisom = () => {
                             Uneix-te a nosaltres en aquest viatge cap a l'autodescobriment i la realització personal. En Aurores, t'ajudem a trobar la teva llum interior i a brillar amb tota la teva esplendor.
                         </h1>
                     </div>
-                    <div>
-                        <Image
-                            src="/sala.jpg"
-                            width={400}
-                            height={250}
-                            alt="Sala Principal"
-                            className=''
-                        />
-                    </div>
+                   
 
                 </div>
-            </div>
-            <div className="flex flex-row justify-center items-center "> 
+                <div className="flex flex-row justify-center items-center "> 
                         <Calendar /> 
                     </div>
+            </div>
+            
         </div>
+        
     );
 }
 
